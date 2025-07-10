@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platno-Trading | Construction&Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81',
+                        secondary: '#FF6B35',
+                        accent: '#00A896',
+                        dark: '#1A1A2E',
+                        light: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-reverse': 'float-reverse 5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'float-reverse': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(15, 76, 129, 0.9) 0%, rgba(0, 168, 150, 0.9) 100%);
+        }
+        .hero-section {
+            background-image: url('images/build.jpg');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            
+        }
+        .card-hover {
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .icon-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        .icon-float-reverse {
+            animation: float-reverse 5s ease-in-out infinite;
+        }
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(0, 168, 150, 0.5);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(0, 168, 150, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 backdrop-blur-sm bg-opacity-80">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary flex items-center">
+                        <a href="#" class="text-2xl font-bold text-primary flex items-center">
+          <!-- Logo Image -->
+          <img 
+            src="images/platno new logo.jpg" 
+            alt="Platno Trading" 
+            class="w-10 h-10 mr-3">
+                       Platno Trading<span class="text-accent">Enterprise&Projects</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#vision" class="text-dark hover:text-secondary font-medium transition-colors">Vision</a>
+                    <a href="#services" class="text-dark hover:text-secondary font-medium transition-colors">Services</a>
+                    <a href="#process" class="text-dark hover:text-secondary font-medium transition-colors">Process</a>
+                    <a href="#contact" class="text-dark hover:text-secondary font-medium transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-dark focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section gradient-bg text-white py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">Building the Future, Today</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Innovative, sustainable, and precision-driven construction solutions for a smarter world.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#contact" class="bg-secondary hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all glow-effect">
+                    Get in Touch <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#services" class="border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-3 px-8 rounded-full transition-all">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+<!-- Overview Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Building Excellence Since 2015</h2>
+      <div class="w-20 h-1 bg-secondary mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <p class="text-lg leading-relaxed">
+          <span class="font-bold text-primary">Platno Trading</span> is a premier full-service construction firm specializing in 
+          integrated building solutions for commercial, residential, and infrastructure projects. 
+          With over 200 successfully delivered projects across 12 states, we combine 
+          <span class="text-accent">cutting-edge technology</span> with <span class="text-accent">time-tested craftsmanship</span>.
+        </p>
+        
+       
+
+       
+      </div>
+
+      <div class="relative">
+        <img 
+          src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+          alt="Construction team meeting" 
+          class="rounded-xl shadow-xl hover-scale"
+        >
+        <div class="absolute -bottom-5 -right-5 bg-primary text-white p-4 rounded-lg shadow-lg">
+          <p class="font-bold">10+ Industry Awards</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Vision, Mission, Objectives -->
+    <section id="vision" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Our Foundation</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Guiding principles that shape every project we undertake</p>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-light p-8 rounded-xl card-hover relative overflow-hidden group">
+                    <div class="absolute -right-6 -top-6 text-primary opacity-10 text-8xl">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="text-primary text-4xl mb-4 icon-float">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Our Vision</h3>
+                    <p class="text-gray-700">Platno trading Enterprise and Projects is a dedicated to job creation and poverty alleviation through
+                    provision of quality service such as building infrastructure, plumbing, welding, electrical and others
+                    to benefit our people irrespective of race and gender and color, with one reason being developing our economy.</p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                
+                <div class="bg-light p-8 rounded-xl card-hover relative overflow-hidden group">
+                    <div class="absolute -right-6 -top-6 text-primary opacity-10 text-8xl">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="text-primary text-4xl mb-4 icon-float-reverse">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Our Mission</h3>
+                    <p class="text-gray-700">Platno Trading Enter and Projects was established prompted by high rate of unemployment all over South Africa. <br> As a black woman owned company, we are looking forward to participating actively ineconomic development of our country. <br> Given overwhelming of unemployment in South Africa, Platno Trading Enterprise and Projects is dedicated</p>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                
+                <div class="bg-light p-8 rounded-xl card-hover relative overflow-hidden group">
+                    <div class="absolute -right-6 -top-6 text-primary opacity-10 text-8xl">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="text-primary text-4xl mb-4 icon-float">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Our Objectives</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <p>To promote sustainable development through facilitation and implantation of socio- economic project that will make meaningful contribu-tion of the communities. <br> To assist the government and other funders in implementing projects that will benefit the communities as means of service delivery.</p>
+                        <li>Leverage AI & IoT in construction</li>
+                        <li>Zero-carbon footprint by 2030</li>
+                        <li>95%+ client satisfaction rate</li>
+                    </ul>
+                    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nature of Business / Services -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">What We Do</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Comprehensive construction services for the modern world</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl card-hover group">
+                    <div class="text-accent text-3xl mb-4 icon-float">
+                        
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-accent transition-colors">🏗️Construction</h3>
+                    <p class="text-gray-700">We deliver end-to-end building solutions from groundbreaking to completion, combining innovative techniques with rigorous quality control to create structures that stand the test of time. <br> Our projects range from residential developments to commercial complexes, all executed with precision and sustainability in mind.</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full mr-2"></span>
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover group">
+                    <div class="text-accent text-3xl mb-4 icon-float-reverse">
+                       
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-accent transition-colors">🔧Maintenance</h3>
+                    <p class="text-gray-700">Our proactive maintenance programs ensure buildings and infrastructure remain in peak condition through scheduled inspections, predictive analytics, and rapid response teams. <br> We minimize downtime while extending asset lifespans with cost-effective care strategies.</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover group">
+                    <div class="text-accent text-3xl mb-4 icon-float">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-accent transition-colors">🚿Plumbing</h3>
+                    <p class="text-gray-700">From high-efficiency residential systems to complex commercial networks, our licensed plumbers install and maintain water, gas, and drainage systems using corrosion-resistant materials and smart monitoring technology for leak detection.</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full mr-2"></span>
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover group">
+                    <div class="text-accent text-3xl mb-4 icon-float-reverse">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-accent transition-colors">🪟Glazing</h3>
+                    <p class="text-gray-700">Energy-efficient glass solutions include curtain walls, impact-resistant windows, and automated solar-control systems. <br> Our installers combine aesthetic design with safety glazing certifications for commercial and high-rise applications.</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full mr-2"></span>
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover group">
+                    <div class="text-accent text-3xl mb-4 icon-float">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-accent transition-colors">🏢Civils</h3>
+                    <p class="text-gray-700">Heavy civil engineering capabilities include roadworks, utilities infrastructure, and earthworks executed with GPS-guided equipment. <br> We specialize in flood mitigation systems and ADA-compliant public realm developments.</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full mr-2"></span>
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover group">
+                    <div class="text-accent text-3xl mb-4 icon-float-reverse">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-accent transition-colors"> 🪚Carpentry</h3>
+                    <p class="text-gray-700">Master craftsmen deliver architectural millwork, structural framing, and finish carpentry using FSC-certified woods and CNC precision. <br> Our joinery work ranges from custom cabinetry to complex formwork for concrete pours.</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full mr-2"></span>
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl card-hover group">
+                    <div class="text-accent text-3xl mb-4 icon-float">
+                        
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-accent transition-colors">🔒Security</h3>
+                    <p class="text-gray-700">Integrated security installations feature access control systems, surveillance networks, and perimeter protection designed with layered defense strategies. <br> We conduct vulnerability assessments to harden facilities against modern threats.</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full mr-2"></span>
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover group">
+                    <div class="text-accent text-3xl mb-4 icon-float-reverse">
+                       
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-accent transition-colors">🔧Welding</h3>
+                    <p class="text-gray-700">Sustainable landscape maintenance services encompass organic turf care, precision irrigation systems, and native plant cultivation. <br> Our horticulturalists create biodiverse outdoor spaces that thrive with minimal water and chemical inputs.</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover group">
+                    <div class="text-accent text-3xl mb-4 icon-float">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-accent transition-colors">🌳LandScaping</h3>
+                    <p class="text-gray-700">Complete exterior transformations incorporate hardscaping, drainage solutions, and smart outdoor lighting. <br> Our designs blend functionality with biophilic principles, creating spaces that harmonize architecture with nature.</p>
+                    <div class="mt-4">
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full mr-2"></span>
+                        <span class="inline-block bg-gray-100 text-primary text-sm px-3 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                
+                
+        </div>
+    </section>
+
+    <!-- Implementation Process -->
+    <section id="process" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Our Implementation Process</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">A streamlined approach to excellence in every project</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-light p-6 rounded-xl card-hover group">
+                    <div class="text-secondary text-3xl mb-4 icon-float">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-secondary transition-colors">Community-Driven Planning & Participation</h3>
+                    <p class="text-gray-700">The Implementation is the process that involves the following: <br>
+                                            ✔ Effective participation by the community in planning process</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="fas fa-circle text-xs mr-2"></i> Phase 1: Planning
+                    </div>
+                </div>
+                
+                <div class="bg-light p-6 rounded-xl card-hover group">
+                    <div class="text-secondary text-3xl mb-4 icon-float-reverse">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-secondary transition-colors">Strategic Economic Management</h3>
+                    <p class="text-gray-700">✔ Effective economic Management</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="fas fa-circle text-xs mr-2"></i> Phase 2: Budgeting
+                    </div>
+                </div>
+                
+                <div class="bg-light p-6 rounded-xl card-hover group">
+                    <div class="text-secondary text-3xl mb-4 icon-float">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-secondary transition-colors">Collaborative Stakeholder Engagement</h3>
+                    <p class="text-gray-700">✔ Co-operation and inter-relationship with community stakeholders such as councilors, forensic and local institutions</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="fas fa-circle text-xs mr-2"></i> Phase 3: Procurement
+                    </div>
+                </div>
+                
+                <div class="bg-light p-6 rounded-xl card-hover group">
+                    <div class="text-secondary text-3xl mb-4 icon-float-reverse">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-secondary transition-colors">Skills Development & Entrepreneurial Growth</h3>
+                    <p class="text-gray-700">✔ Entrepreneurial deployment skills, training and enhancement</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="fas fa-circle text-xs mr-2"></i> Phase 4: Execution
+                    </div>
+                </div>
+                
+                <div class="bg-light p-6 rounded-xl card-hover group">
+                    <div class="text-secondary text-3xl mb-4 icon-float">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-secondary transition-colors">Empowering Underprivileged Talent</h3>
+                    <p class="text-gray-700">✔ Platno has a team of skilled underprivileged people and it is 100% black.</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="fas fa-circle text-xs mr-2"></i> Phase 5: Monitoring
+                    </div>
+                </div>
+                
+                <div class="bg-light p-6 rounded-xl card-hover group">
+                    <div class="text-secondary text-3xl mb-4 icon-float-reverse">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-secondary transition-colors">Quality Assurance</h3>
+                    <p class="text-gray-700">Drone-based inspections & AI defect detection for flawless delivery.</p>
+                    <div class="mt-4 flex items-center text-sm text-gray-500">
+                        <i class="fas fa-circle text-xs mr-2"></i> Phase 6: Delivery
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <!-- Centered Stats Section -->
+<section class="py-16 gradient-bg text-white">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col items-center">
+      <!-- Section Header (optional) -->
+      <h3 class="text-2xl font-bold mb-12 text-center">Our Impact in Numbers</h3>
+      
+      <!-- Centered Stats Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Stat 1 -->
+        <div class="p-6 text-center">
+          <div class="text-4xl font-bold mb-2 animate-count" data-target="10">0</div>
+          <div class="text-lg">Projects Completed</div>
+        </div>
+        
+        <!-- Stat 2 -->
+        <div class="p-6 text-center">
+          <div class="text-4xl font-bold mb-2 animate-count" data-target="98">0</div>
+          <div class="text-lg">Client Satisfaction %</div>
+        </div>
+        
+        <!-- Stat 3 -->
+        <div class="p-6 text-center">
+          <div class="text-4xl font-bold mb-2 animate-count" data-target="25">0</div>
+          <div class="text-lg">Skilled Professionals</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Let's Build Together</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Get in touch to discuss your next project</p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <div class="text-primary text-xl mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Headquarters</h4>
+                                <p>118 High Street, Turffontein, Johannesburg,2190</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <div class="text-primary text-xl mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Call Us</h4>
+                                <p>+27 73 065 0565/ +27 78 217 648/+27 11 681 0465</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                            <div class="text-primary text-xl mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p>platnotrading23@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-bold mb-4">Follow Our Work</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-primary w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-primary w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-primary w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-primary w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-primary to-accent rounded-xl p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-white mb-6">Send a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-white mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-white placeholder-white placeholder-opacity-70">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-white mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-white placeholder-white placeholder-opacity-70">
+                        </div>
+                        <div>
+                            <label for="project" class="block text-white mb-2">Project Type</label>
+                            <select id="project" class="w-full px-4 py-3 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-white">
+                                <option class="text-dark">Residential</option>
+                                <option class="text-dark">Commercial</option>
+                                <option class="text-dark">Industrial</option>
+                                <option class="text-dark">Infrastructure</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-white mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-white placeholder-white placeholder-opacity-70"></textarea>
+                        </div>
+                        <button type="submit" class="bg-white text-primary hover:bg-opacity-90 font-bold py-3 px-6 rounded-lg transition-all w-full">
+                            Submit <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <a href="#" class="text-xl font-bold text-white flex items-center mb-4">
+                        <i class="fas fa-building mr-2"></i>
+                        PlatNo Trading<span class="text-accent">Enterprise&Projects</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">Building Beyond Boundaries with innovation and sustainability at our core.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#process" class="text-gray-400 hover:text-white transition-colors">Our Process</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Urban Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Residential</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Green Construction</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Infrastructure</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-dark w-full">
+                        <button type="submit" class="bg-accent hover:bg-opacity-90 text-white px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2025 NexusBuild. All rights reserved. Powered by AI-driven construction solutions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple counter animation for stats
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('.animate-count');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        };
+        
+        // Intersection Observer to trigger animations when scrolled to
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        document.querySelectorAll('.animate-count').forEach(counter => {
+            observer.observe(counter);
+        });
+    </script>
+</body>
+</html>
